@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* 装饰性样式 */
+section {
+  display: grid;
+  place-items: center;
+  font-size: 2em;
+}
+
+section:nth-child(2) {
+  background-image: url(../src/R-C.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  box-shadow: 0 0 24px hsl(0, 0%, 0%, 0.2);
+  display: grid;
+  place-items: center;
+  font-size: 2em;
+  background: white;
+}

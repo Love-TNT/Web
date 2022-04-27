@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightsteelblue;
+}
+
+.container {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.container .card {
+  margin-top: 100px;
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.container .card:hover {
+  height: 420px;
+}
+
+.container .card .imgBx {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imgBx img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.container .card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+/*按钮样式*/
+
+.btn {
+  border: 2px solid;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px 20px;
+  font-weight: 300;
+}
+.one {
+  color: #4cc9f0;
+}
+.one a {
+  text-decoration: none;
+  color: #4cc9f0;
+  font-weight: 600;
+}
+.one:hover a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.two {
+  color: #b9e769;
+}
+.two a {
+  text-decoration: none;
+  color: #b9e769;
+  font-weight: 600;
+}
+.two:hover a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+.three {
+  color: #ffc0cb;
+}
+.three a {
+  text-decoration: none;
+  color: #ffc0cb;
+  font-weight: 600;
+}
+.three:hover a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn:hover {
+  color: white;
+  border: 0;
+}
+
+.one:hover {
+  background-color: #4cc9f0;
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(76, 201, 240, 1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(76, 201, 240, 1);
+  box-shadow: 10px 10px 99px 6px rgba(76, 201, 240, 1);
+}
+
+.two:hover {
+  background-color: #b9e769;
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(185, 231, 105, 1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(185, 231, 105, 1);
+  box-shadow: 10px 10px 99px 6px rgba(185, 231, 105, 1);
+}
+
+.three:hover {
+  background-color: #ffc0cb;
+  -webkit-box-shadow: 10px 10px 99px 6px #ffc0cb;
+  -moz-box-shadow: 10px 10px 99px 6px #ffc0cb;
+  box-shadow: 10px 10px 99px 6px #ffc0cb;
+}

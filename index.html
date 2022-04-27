@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="shortcut icon" href="./src/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>TNT的小窝</title>
+    <style>
+      /* 核心样式 */
+      main {
+        /* scroll-snap-type: y mandatory; */
+        scroll-snap-type: y mandatory;
+        /* 需要把滚动条设置到直接父容器，scroll-snap-type 才能生效，默认是在 body 上，现在是 main 上 */
+        overflow: scroll;
+        overflow-x: hidden;
+        height: 100vh;
+      }
+
+      section {
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: end;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <video autoplay loop muted>
+          <source src="./src/background.mp4" />
+        </video>
+        <div class="channel"><p>“花还会重开，春天还会再来”</p></div>
+        <div class="menu_container">
+          <input type="checkbox" name="open" id="open" />
+          <label for="open" class="bt">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <ul class="menu">
+            <li style="--i: 1">
+              <a target="_blank" ref="#"> Home </a>
+            </li>
+            <li style="--i: 2">
+              <a target="_bank" href="./public/about.html"> About </a>
+            </li>
+
+            <li style="--i: 3">
+              <a target="_blank" href="./public/plans.html"> Plans </a>
+            </li>
+            <li style="--i: 4">
+              <a target="_blank" href="./public/team.html"> Team </a>
+            </li>
+            <li style="--i: 5">
+              <a target="_bank" href="https://love-tnt.github.io/Blog">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="server_vedio">
+          <p>Our Server</p>
+        </div>
+        <div class="server_vedio">
+          <iframe
+            src="//player.bilibili.com/player.html?aid=294554346&bvid=BV14F41187Px&cid=452290996&page=1"
+            scrolling="no"
+            frameborder="no"
+            framespacing="0"
+            allowfullscreen="false"
+          >
+          </iframe>
+        </div>
+
+        <div class="buttons">
+          <button>
+            <a
+              style="text-decoration: none; font-weight: 600; color: white"
+              href="./public/login.html"
+              target="_blank"
+              >Learn More</a
+            >
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
